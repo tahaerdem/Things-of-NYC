@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "thingsNYC",
+			"path": "."
+		},
+		{
+			"name": "c4sp",
+			"path": "../c4sp"
+		}
+	],
+	"settings": {}
+}
