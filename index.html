@@ -2,23 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Things of New York City</title>
-    <link rel="stylesheet" href="style.css"/>
-        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
-        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <div class="vip">
-        <video width="420vw" autoplay loop>
-            <source src="./images/movingPicture/cone.mp4" type="video/mp4">
-            <h2>Your browser does not support the video tag.</h2>
-          </video>
-    </div>
-    <div class="wip">
-        <h1>Things of New York City here soon.</h1>
-    </div>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="items.html">Items</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <h1 class="logo">Things of NYC</h1>
+    </header>
+
+    <main>
+        <section class="card-gallery">
+            <!-- Example card -->
+            <div class="card">
+                <h2 class="item-title">Item Name</h2>
+                <model-viewer class="item-model" src="path/to/your/model.glb" alt="Description of your 3D model" auto-rotate camera-controls></model-viewer>
+                <p class="item-description">Short description of the item.</p>
+                <a href="item_page.html" class="item-link">View item</a>
+            </div>
+            <!-- Add more cards for other items -->
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
